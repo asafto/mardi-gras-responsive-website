@@ -1,0 +1,134 @@
+.navbar {
+    background-color: rgba(242, 242, 242, 0.3);
+
+    .navbar-brand img {
+        height: 3em;
+
+        @include tablet {
+            height: 2em;
+        }
+
+        @include mobile {
+            height: 2em;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    #navbarResponsive {
+        position: absolute;
+        left: 25%;
+
+        @include tablet {
+            position: fixed;
+            top: 66px;
+            left: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            width: 100%;
+            height: 33%;
+            background-color: rgba(242, 242, 242, 0.3);
+
+            &.collapsing {
+                left: -100%;
+                transition: all .3s ease-in;
+            }
+
+            &.show {
+                left: 0;
+                transition: left .3s ease-in;
+            }
+
+            &.collapsed {
+                left: -100%;
+                transition: left .3s ease-in;
+            }
+        }
+
+        @include mobile {
+            position: fixed;
+            top: 66px;
+            left: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            width: 100%;
+            height: 50%;
+            background-color: rgba(242, 242, 242, 0.3);
+
+            &.collapsing {
+                left: -100%;
+                transition: all .3s ease-out;
+            }
+
+            &.show {
+                left: 0;
+                transition: left .3s ease-in;
+            }
+
+            &.collapsed {
+                left: -100%;
+                transition: left .3s ease-out;
+            }
+        }
+
+        .nav-item {
+            padding-right: 3em;
+
+            @include tablet {
+                margin-left: 0.5em;
+                padding-top: 0.8em;
+            }
+
+            @include mobile {
+                margin-left: 0.5em;
+                padding-top: 0.8em;
+            }
+
+            .nav-link {
+                text-transform: uppercase;
+                font-family: $textFont;
+                font-weight: bold;
+                font-size: 1.4em;
+                letter-spacing: 0.2em;
+                color: $darkColor;
+                text-shadow: -1px 0 $brightColor, 0 1px $brightColor, 1px 0 $brightColor,
+                    0 -1px $brightColor;
+                border-top: 4px solid transparent;
+
+                &:hover {
+                    color: $brightColor;
+                    text-shadow: -1px 0 $darkColor, 0 1px $darkColor, 1px 0 $darkColor,
+                        0 -1px $darkColor;
+                }
+
+                @include tablet {
+                    font-size: 1.1em;
+                    letter-spacing: 0.1em;
+                }
+
+                @include mobile {
+                    font-size: 1em;
+                    letter-spacing: 0.1em;
+                }
+            }
+        }
+
+        .current .nav-link {
+            border-top: 4px ridge $purpleColor;
+
+            @include tablet {
+                width: 15%;
+                padding-left: 5px;
+            }
+
+            @include mobile {
+                width: 32%;
+                padding-left: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,215 @@
+#sponsers {
+    background-color: $purpleColor;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 4;
+
+    @include tablet {
+        height: 75vh;
+    }
+
+    @include mobile {
+        height: 80vh;
+    }
+
+    h1 {
+        font-family: $headingFontTwo;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1em;
+        color: $yellowColor;
+        font-size: 2.5em;
+        letter-spacing: 0.1em;
+
+        @include tablet {
+            font-size: 1.5em;
+        }
+
+        @include mobile {
+            font-size: 1.5em;
+        }
+    }
+
+    #carouselSponsers {
+        background-color: transparent;
+        width: 95%;
+        margin: 0 auto;
+
+        .row {
+            width: 80%;
+            margin: 0 auto;
+
+            .card {
+                background-color: transparent;
+                height: 60vh;
+                overflow: hidden;
+
+                .card-img-top {
+                    height: 45%;
+                    width: 100%;
+                    display: block;
+                    padding: 0;
+                    transition: transform .2s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        overflow: hidden;
+                    }
+                }
+
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    text-align: center;
+                    background-color: $brightColor;
+
+                    .card-title {
+                        overflow: hidden;
+                        font-family: $headingFontOne;
+                        color: $purpleColor;
+                        font-size: 1.2em;
+                    }
+
+                    .card-text {
+                        font-size: 0.9em;
+                        overflow: hidden;
+                    }
+
+                    .btn {
+                        border: 1px solid $greenColor;
+                        color: $greenColor;
+                        overflow: hidden;
+
+                        &:hover {
+                            border: 1px solid $brightColor;
+                            color: $brightColor;
+                            background-color: $greenColor;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include tablet {
+            display: none;
+        }
+
+        @include mobile {
+            display: none;
+        }
+
+    }
+
+    #carouselSponsersMobile {
+        display: none;
+
+        @include tablet {
+            display: block;
+
+            .row {
+                width: 70%;
+                margin: 0 auto;
+
+                .card {
+                    background-color: transparent;
+                    height: 60vh;
+
+                    .card-img-top {
+                        height: 45%;
+                        width: 100%;
+                        display: block;
+                        padding: 0;
+                    }
+
+                    .card-body {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        text-align: center;
+                        background-color: $brightColor;
+
+                        .card-title {
+                            overflow: hidden;
+                            font-family: $headingFontOne;
+                            color: $purpleColor;
+                            font-size: 1.8em;
+                        }
+
+                        .card-text {
+                            font-size: 1.1em;
+                        }
+
+                        .btn {
+                            border: 1px solid $greenColor;
+                            color: $greenColor;
+                            font-family: $textFont;
+                            font-size: 1.2em;
+
+                            &:hover {
+                                border: 1px solid $brightColor;
+                                color: $brightColor;
+                                background-color: $greenColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @include mobile {
+            display: block;
+            height: 65vh;
+
+            .row {
+                width: 95%;
+                margin: 0 auto;
+
+                .card {
+                    background-color: transparent;
+                    height: 60vh;
+
+                    .card-img-top {
+                        height: 45%;
+                        width: 100%;
+                        display: block;
+                        padding: 0;
+                    }
+
+                    .card-body {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        text-align: center;
+                        background-color: $brightColor;
+
+                        .card-title {
+                            overflow: hidden;
+                            font-family: $headingFontOne;
+                            color: $purpleColor;
+                            font-size: 1.2em;
+                        }
+
+                        .card-text {
+                            font-size: .9em;
+                        }
+
+                        .btn {
+                            border: 1px solid $greenColor;
+                            color: $greenColor;
+                            font-size: 1em;
+
+
+                            &:hover {
+                                border: 1px solid $brightColor;
+                                color: $brightColor;
+                                background-color: $greenColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

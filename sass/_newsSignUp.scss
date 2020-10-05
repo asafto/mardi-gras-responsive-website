@@ -1,0 +1,67 @@
+#signUpPage {
+    background-image: url(../images/mardigras/mardigras8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .home {
+        margin: 0;
+        padding: 0;
+
+        .logo {
+            height: 5em;
+
+            @include tablet {
+                height: 5em;
+            }
+
+            @include mobile {
+                height: 4em;
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .form-container {
+        background-color: rgba(13, 13, 13, 0.5);
+        border: 1px solid $brightColor;
+
+        .form-head {
+            font-family: $headingFontTwo;
+            color: $yellowColor;
+            overflow: hidden;
+        }
+
+        p {
+            font-family: $textFont;
+            color: $yellowColor;
+            font-size: 1.2em;
+        }
+
+        label {
+            font-family: $textFont;
+            color: $brightColor;
+            font-size: 1em;
+        }
+
+        button {
+            font-family: $textFont;
+            color: $brightColor;
+            font-size: 1em;
+            background-color: $purpleColor;
+            border: none;
+            text-transform: uppercase;
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+
+        .divider {
+            background-color: $yellowColor;
+        }
+    }
+}

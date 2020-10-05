@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+
+  <!-- Fancybox css  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+  <!-- Project CSS -->
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <title>Contact - Mardi mardi</title>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer>
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer>
+  </script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous" defer>
+  </script>
+
+  <!-- adding Font Awesome icons -->
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" defer></script>
+
+  <!-- adding Google icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- adding custom functions for page visibility -->
+  <script src="./javascript/main.js" defer></script>
+
+</head>
+
+<body class="contact-page">
+  <!-- Start of Header Section -->
+  <div id="header">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a href="index.html" class="navbar-brand">
+        <img src="./images/logo/mardiGrasLogo.png" alt="Mardi Gras Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./media.html">Media</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./faq.html">FAQ</a>
+          </li>
+          <li class="nav-item current">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- End Of Header Section -->
+
+  <!-- Start of Contact section -->
+  <section id="contactUsPage">
+    <div class="row">
+      <div class="form-container p-4 p-lg-8 rounded-lg">
+        <form>
+          <h1 class="mb-2 form-head text-center">Contact Us</h1>
+          <p class="mb-4">Please fill your details and we will get back at you shortly</p>
+          <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" class="form-control border-0" placeholder="First-Name" required="true">
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" class="form-control border-0" placeholder="Last-Name" required="true">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="form-control border-0" placeholder="Email address" required="true">
+          </div>
+          <div class="form-group">
+            <label for="comment">Comments:</label>
+            <textarea class="form-control" rows="5" id="comment" placeholder="Place your comments here"></textarea>
+          </div>
+          <hr class="divider" />
+          <button class="btn btn-primary btn-block" type="submit">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- End of Contact section -->
+
+  <!-- Start of bannerOne Section -->
+  <div id="bannerOne"></div>
+  <!-- End of bannerOne Section -->
+
+  <!-- Start of bannerTwo Section -->
+  <div id="bannerTwo"></div>
+  <!-- End of bannerTwo Section -->
+
+  <!-- Start of Mobile Banner Section -->
+  <div id="bannerMobile"></div>
+  <!-- End of Mobile Banner Section -->
+
+  <!-- Start of Banner Popup Section -->
+  <div class="adWrapper hide">
+    <div class="adPopup">
+      <div class="adPopupClose"><span class="material-icons">cancel</span></div>
+      <div class="adPopupContent">
+        <h2>This is a banner ad popup page example</h2>
+        <img src="./images/banners/adPage/banner1_page.png" alt="Banner 1">
+        <button class="btn btn-primary">Click To Buy</button>
+      </div>
+    </div>
+  </div>
+  <!-- End of Mobile Banner Section -->
+
+  <!-- Start of Quiz Section -->
+
+  <div class="quizWrapper hide">
+    <div class="quizPopup">
+      <div class="quizPopupClose"><span class="material-icons">cancel</span></div>
+      <div class="quizPopupContent">
+        <h2>Mardi Gras Trivia</h2>
+        <div id="currentScore">Your score is:&nbsp;<span class="score">0</span>/<span class="targetScore">0</span>
+        </div>
+        <div class="gameOver hide">Game Over</div>
+        <div id="questionContainer" class="">
+          <div id="question"></div>
+          <div id="answerButtons" class="button-grid">
+          </div>
+        </div>
+        <div class="controls">
+          <button id="nextButton" class="btn hide">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="floatingButton">
+    <button id="startButton" class="btn btnStart"><span>Start<span class="material-icons">
+          play_circle_outline</span>Trivia</span></button>
+  </div>
+
+  <!-- End of Quiz Section -->
+
+  <!-- Start of Footer Section -->
+  <footer id="footer">
+    <div class="row justify-content-center">
+      <div class="container-fluid text-center">
+        <h5>Mardi Gras Information Center Is Located Here</h5>
+        <div class="container p-2">
+          <div class="map-responsive">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.434561281226!2d-90.04747508504468!3d29.938176581921113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a6515ab3e883%3A0x6ee8a309c10e8ced!2sMardi%20Gras%20Blvd%2C%20Gretna%2C%20LA%2C%20USA!5e0!3m2!1sen!2sil!4v1591012644327!5m2!1sen!2sil"
+              width="1200" height="300" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+          </div>
+          <h6 class="p-2 mt-5">
+            Get The Latest On Our Social Media Channels
+          </h6>
+        </div>
+        <div class="socialIcons p-2">
+          <ul class="iconsList">
+            <a href="https://www.facebook.com/MardiGrasNewOrleans" target="_blank">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://twitter.com/MardiGrasNOLA" target="_blank">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="https://www.instagram.com/mardigrasneworleans/" target="_blank">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" target="_blank">
+              <i class="fab fa-youtube-square"></i>
+            </a>
+            <a href="https://www.tripadvisor.com/Profile/MardiGrasNOLA?fid=3042af41-27f1-4932-add2-103f046068b7"
+              target="_blank">
+              <i class="fab fa-tripadvisor"></i>
+            </a>
+          </ul>
+        </div>
+        <hr class="divider" />
+        <p>
+          2020 Copyright &copy; Asaf Toledano - FullStack Web Developer
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer Section -->
+</body>
+
+</html>

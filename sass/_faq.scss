@@ -1,0 +1,163 @@
+#faqParallax {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/mardigras/mardigras5.jpg');
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+
+    .parallaxHeading {
+        position: fixed;
+        top: 30%;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+        text-transform: uppercase;
+        text-shadow: -2px 0 $brightColor, 0 2px $brightColor, 2px 0 $brightColor,
+            0 -2px $brightColor;
+        overflow: hidden;
+
+        h2 {
+            font-family: $headingFontOne;
+            color: $greenColor;
+            letter-spacing: 0.2em;
+            font-size: 4em;
+            overflow: hidden;
+
+            @include tablet {
+                font-size: 2.5em;
+            }
+
+            @include mobile {
+                font-size: 2em;
+            }
+        }
+
+        h5 {
+            font-family: $headingFontTwo;
+            font-size: 3em;
+            height: 3em;
+            color: $purpleColor;
+            letter-spacing: 0.1em;
+            margin-top: 0.5em;
+
+            @include tablet {
+                font-size: 2em;
+            }
+
+            @include mobile {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+#faqSection {
+    position: relative;
+    background-color: $purpleColor;
+    z-index: 2;
+    padding-bottom: 5vh;
+
+    .container {
+        width: 60%;
+        margin: 1em auto;
+        padding: 0;
+
+        @include tablet {
+            width: 90%;
+        }
+
+        @include mobile {
+            width: 90%;
+        }
+
+        .title {
+            h2 {
+                font-size: 2.5em;
+                font-family: $headingFontTwo;
+                color: $brightColor;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                overflow: hidden;
+                text-align: center;
+
+                @include tablet {
+                    font-size: 1.5em;
+                }
+
+                @include mobile {
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        .subTitle {
+            font-size: 2em;
+            font-family: $headingFontOne;
+            color: $yellowColor;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-align: center;
+            height: 2em;
+
+            @include tablet {
+                font-size: 1.5em;
+            }
+
+            @include mobile {
+                font-size: 1em;
+            }
+        }
+
+        .faqExplained {
+            display: flex;
+            align-items: center;
+            background-color: $brightColor;
+
+            p {
+                font-size: 1em;
+                font-family: $textFont;
+                color: $darkColor;
+                padding: 1em 2em 0.5em 1em;
+                text-align: justify;
+
+                @include tablet {
+                    font-size: 1em;
+                }
+
+                @include mobile {
+                    font-size: .8em;
+                }
+            }
+
+            .icon {
+                font-size: 3em;
+                color: $yellowColor;
+                padding: 1em 0.5em;
+                width: 5em;
+            }
+        }
+
+        #faqAccordion {
+            background: transparent;
+
+            .card {
+                background-color: transparent;
+
+                .card-header.question {
+                    background-color: rgba(255, 255, 255, 0.7);
+                }
+
+                .answer {
+                    background-color: rgba(13, 13, 13, 0.5);
+                    color: $brightColor;
+                }
+            }
+        }
+    }
+}

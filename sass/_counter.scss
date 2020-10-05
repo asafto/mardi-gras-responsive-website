@@ -1,0 +1,120 @@
+.counterContainer {
+    position: absolute;
+    top: 25vh;
+    right: 1%;
+    background-color: rgba(13, 13, 13, 0.5);
+    border-radius: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(30deg);
+    z-index: 10;
+    padding: 0 1em;
+
+    @include tablet {
+        position: fixed;
+        z-index: 3;
+        top: 10vh;
+        right: 23%;
+        transform: none;
+    }
+
+    @include mobile {
+        position: fixed;
+        z-index: 3;
+        top: 12vh;
+        right: 8%;
+        transform: none;
+    }
+
+    .counterTitle {
+        font-family: $headingFontOne;
+        color: $purpleColor;
+        padding: .5em 1em 0 1em;
+        font-size: 2em;
+        text-transform: uppercase;
+        text-shadow: -2px 0 $brightColor, 0 2px $brightColor, 2px 0 $brightColor,
+            0 -2px $brightColor;
+        overflow: hidden;
+
+        @include tablet {
+            font-size: 1.5em;
+            padding: .5em 1em 0 1em;
+        }
+
+        @include mobile {
+            font-size: 1.2em;
+            padding: .5em 1em 0 .5em;
+        }
+    }
+
+    .counter {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        font-family: $textFont;
+        text-shadow: -2px 0 $brightColor, 0 2px $brightColor, 2px 0 $brightColor,
+            0 -2px $brightColor;
+        margin-bottom: 0;
+        @include tablet {
+            width: 100%;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
+        div {
+            background-color: rgba(242, 242, 242, 0.5);
+            text-align: center;
+            padding: 8px;
+            margin: 8px;
+            border-radius: 5px;
+            min-width: 4em;
+
+            @include tablet {
+                min-width: 3em;
+                padding: 3px;
+                margin: 8px;
+            }
+
+            @include mobile {
+                min-width: 2em;
+                padding: 3px;
+                margin: 8px;
+            }
+        }
+
+        li {
+            display: block;
+            font-size: 1em;
+            list-style-type: none;
+            color: $darkColor;
+            padding: .1em;
+            text-transform: uppercase;
+
+            @include tablet {
+                font-size: .8em;
+            }
+
+            @include mobile {
+                min-width: .8em;
+            }
+
+            span {
+                display: block;
+                color: $darkColor;
+                font-size: 1.3em;
+
+                @include tablet {
+                    font-size: 1.3em;
+                }
+
+                @include mobile {
+                    min-width: 1em;
+                }
+            }
+        }
+    }
+}

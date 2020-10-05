@@ -1,0 +1,47 @@
+// Setting up Sass variables
+$headingFontOne: 'Pattaya',
+sans-serif;
+$headingFontTwo: 'Henny Penny',
+cursive;
+$textFont: 'Roboto',
+sans-serif;
+$purpleColor: #9453a6;
+$greenColor: #8cbf3f;
+$yellowColor: #f2cc0f;
+$brightColor: #f2f2f2;
+$darkColor: #0d0d0d;
+
+//global settings
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    outline: none;
+}
+
+p {
+    font-family: $textFont;
+    color: $darkColor;
+}
+
+.divider {
+    width: 80%;
+    background-color: $darkColor;
+    margin: 0 auto 2em auto;
+}
+
+//mixin breakpoints for media queries
+
+@mixin tablet {
+    @media(max-width:768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media(max-width:576px) {
+        @content;
+    }
+}

@@ -1,0 +1,33 @@
+#bannerMobile {
+    display: none;
+
+    @include tablet {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        z-index: 7;
+        cursor: pointer;
+        width: 100%;
+        height: 100px;
+        background-image: url("../images/banners/mobile/banner4_mobile.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: all 1.5s ease-in-out;
+    }
+
+    @include mobile {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        z-index: 7;
+        cursor: pointer;
+        width: 100%;
+        height: 50px;
+        background-image: url("../images/banners/mobile/banner4_mobile.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: background-image 2s ease-in-out;
+    }
+}
