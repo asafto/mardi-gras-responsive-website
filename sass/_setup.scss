@@ -18,6 +18,12 @@ $darkColor: #0d0d0d;
   outline: none;
 }
 
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
 p {
   font-family: $textFont;
   color: $darkColor;
