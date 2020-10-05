@@ -90,7 +90,7 @@
     align-items: center;
     justify-content: center;
     background-image: url('../images/mardigras/mardigras3.jpg');
-    height: 80vh;
+    height: 800px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -133,11 +133,11 @@
     align-items: center;
     justify-content: center;
     background-image: url('../images/mardigras/mardigras3.jpg');
-    height: 80vh;
+    height: 600px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     z-index: -1;
 
     .parallaxHeading {
