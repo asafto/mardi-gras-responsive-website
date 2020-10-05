@@ -1507,7 +1507,7 @@ p {
 
 @media (max-width: 576px) {
   #aboutSection .row .card.history {
-    height: 208vh;
+    height: 200vh;
   }
 }
 
@@ -1527,7 +1527,7 @@ p {
 
 @media (max-width: 576px) {
   #aboutSection .row .card.mayor {
-    height: 125vh;
+    height: 122vh;
   }
 }
 
@@ -1700,7 +1700,7 @@ p {
 }
 
 #mediaSection .gallery.video {
-  -ms-grid-columns: eat(6, 1fr);
+  -ms-grid-columns: repeat(6, 1fr);
   grid-template-columns: repeat(6, 1fr);
 }
 
