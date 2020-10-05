@@ -1,100 +1,100 @@
 #footer {
-    background-color: $brightColor;
-    padding: 2rem;
-    position: relative;
-    z-index: 4;
+  background-color: $brightColor;
+  padding: 2rem;
+  position: relative;
+  z-index: 4;
 
-    h5 {
-        font-family: $textFont;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        margin-bottom: 1em;
+  h5 {
+    font-family: $textFont;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1em;
+
+    @include tablet {
+      font-size: 1.1em;
+    }
+
+    @include mobile {
+      font-size: 0.9em;
+    }
+  }
+
+  h6 {
+    font-family: $textFont;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    @include tablet {
+      font-size: 0.9em;
+    }
+
+    @include mobile {
+      font-size: 0.7em;
+    }
+  }
+
+  .socialIcons {
+    .iconsList {
+      a {
+        display: inline-block;
+        margin: 0 0.3em;
+        font-size: 4em;
 
         @include tablet {
-            font-size: 1.1em;
+          font-size: 3em;
         }
 
         @include mobile {
-            font-size: .9em;
+          font-size: 1.5em;
         }
+
+        &:nth-child(1) {
+          color: rgb(6, 116, 231);
+        }
+
+        &:nth-child(2) {
+          color: rgb(29, 161, 242);
+        }
+
+        &:nth-child(3) {
+          color: #bb2c75;
+        }
+
+        &:nth-child(4) {
+          color: #f00;
+        }
+
+        &:nth-child(5) {
+          color: rgb(52, 224, 161);
+        }
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+        &:active {
+          color: $darkColor;
+        }
+      }
+    }
+  }
+
+  p {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    // font-weight: bold;
+    letter-spacing: 0.1rem;
+
+    @include tablet {
+      font-size: 0.8em;
+      width: 50%;
+      margin: 0 auto 8em auto;
     }
 
-    h6 {
-        font-family: $textFont;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-
-        @include tablet {
-            font-size: .9em;
-        }
-
-        @include mobile {
-            font-size: .7em;
-        }
+    @include mobile {
+      width: 80%;
+      font-size: 0.5em;
+      margin: 0 auto 4em auto;
     }
-
-    .socialIcons {
-        .iconsList {
-            a {
-                display: inline-block;
-                margin: 0 0.3em;
-                font-size: 4em;
-
-                @include tablet {
-                    font-size: 3em;
-                }
-
-                @include mobile {
-                    font-size: 1.5em;
-                }
-
-                &:nth-child(1) {
-                    color: rgb(6, 116, 231);
-                }
-
-                &:nth-child(2) {
-                    color: rgb(29, 161, 242);
-                }
-
-                &:nth-child(3) {
-                    color: #bb2c75
-                }
-
-                &:nth-child(4) {
-                    color: #f00;
-                }
-
-                &:nth-child(5) {
-                    color: rgb(52, 224, 161);
-                }
-
-                &:hover {
-                    opacity: 0.7;
-                }
-
-                &:active {
-                    color: $darkColor;
-                }
-            }
-        }
-    }
-
-    p {
-        text-transform: uppercase;
-        font-size: 0.7em;
-        // font-weight: bold;
-        letter-spacing: 0.1rem;
-
-        @include tablet {
-            font-size: 0.8em;
-            width: 50%;
-            margin: 0 auto 8em auto;
-        }
-
-        @include mobile {
-            width: 80%;
-            font-size: 0.5em;
-            margin: 0 auto 4em auto;
-        }
-    }
+  }
 }

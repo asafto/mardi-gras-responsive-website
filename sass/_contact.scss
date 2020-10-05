@@ -1,79 +1,78 @@
-.contact-page{
-    #contactUsPage {
-        background-image: url(../images/mardigras/mardigras8.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        overflow: hidden;
-    
-        .row{
-            width: 80%;
-            margin: 0 auto;
-            @include tablet {
-                width: 80%;
-            }
-    
-            @include mobile {
-                width: 90%;
-            }
-    
-            .form-container {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                background-color: rgba(13, 13, 13, 0.5);
-                border: 1px solid $brightColor;
-                margin: 25vh auto 5vh auto;
-        
-                @include tablet {
-                    margin: 15vh auto 5vh auto;
-                }
-        
-                @include mobile {
-                    margin: 15vh auto 5vh auto;
-                }
-                .form-head {
-                    font-family: $headingFontTwo;
-                    color: $yellowColor;
-                    overflow: hidden;
-                }
-        
-                p {
-                    font-family: $textFont;
-                    color: $yellowColor;
-                    font-size: 1.2em;
-                }
-        
-                label {
-                    font-family: $textFont;
-                    color: $brightColor;
-                    font-size: 1em;
-                }
-        
-                button {
-                    font-family: $textFont;
-                    color: $brightColor;
-                    font-size: 1em;
-                    background-color: $purpleColor;
-                    border: none;
-                    text-transform: uppercase;
-        
-                    &:hover {
-                        opacity: 0.9;
-                    }
-                }
-        
-                .divider {
-                    background-color: $yellowColor;
-                }
-            }
-        }
-    }
-    #bannerOne{
-        display: none;
-    }
-    #bannerTwo{
-        display: none;
-    }
-}
+.contact-page {
+  #contactUsPage {
+    background-image: url(../images/mardigras/mardigras8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
 
+    .row {
+      width: 80%;
+      margin: 0 auto;
+      @include tablet {
+        width: 80%;
+      }
+
+      @include mobile {
+        width: 90%;
+      }
+
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(13, 13, 13, 0.5);
+        border: 1px solid $brightColor;
+        margin: 25vh auto 5vh auto;
+
+        @include tablet {
+          margin: 15vh auto 5vh auto;
+        }
+
+        @include mobile {
+          margin: 15vh auto 5vh auto;
+        }
+        .form-head {
+          font-family: $headingFontTwo;
+          color: $yellowColor;
+          overflow: hidden;
+        }
+
+        p {
+          font-family: $textFont;
+          color: $yellowColor;
+          font-size: 1.2em;
+        }
+
+        label {
+          font-family: $textFont;
+          color: $brightColor;
+          font-size: 1em;
+        }
+
+        button {
+          font-family: $textFont;
+          color: $brightColor;
+          font-size: 1em;
+          background-color: $purpleColor;
+          border: none;
+          text-transform: uppercase;
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+
+        .divider {
+          background-color: $yellowColor;
+        }
+      }
+    }
+  }
+  #bannerOne {
+    display: none;
+  }
+  #bannerTwo {
+    display: none;
+  }
+}

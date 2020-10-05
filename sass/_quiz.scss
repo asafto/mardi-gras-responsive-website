@@ -1,216 +1,215 @@
 #floatingButton {
-    position: fixed;
-    padding: 5px;
-    bottom: 50px;
-    right: 50px;
-    z-index: 10;
+  position: fixed;
+  padding: 5px;
+  bottom: 50px;
+  right: 50px;
+  z-index: 10;
 
-    @include tablet {
-        bottom: 120px;
-        right: 20px;
+  @include tablet {
+    bottom: 120px;
+    right: 20px;
+  }
+
+  @include mobile {
+    bottom: 70px;
+    right: 20px;
+  }
+
+  .btn {
+    border: 4px ridge $purpleColor;
+    width: 4em;
+    height: 4em;
+    background-color: rgba(13, 13, 13, 0.5);
+    border-radius: 50em;
+    font-family: $headingFontTwo;
+    color: $yellowColor;
+
+    span {
+      display: block;
+      font-size: 0.7em;
+      overflow: hidden;
+
+      &.material-icons {
+        font-size: 1.4em;
+      }
     }
-
-    @include mobile {
-        bottom: 70px;
-        right: 20px;
-    }
-
-    .btn {
-        border: 4px ridge $purpleColor;
-        width: 4em;
-        height: 4em;
-        background-color: rgba(13, 13, 13, 0.5);
-        border-radius: 50em;
-        font-family: $headingFontTwo;
-        color: $yellowColor;
-
-        span {
-            display: block;
-            font-size: 0.7em;
-            overflow: hidden;
-
-            &.material-icons {
-                font-size: 1.4em;
-            }
-        }
-    }
+  }
 }
 
 .quizWrapper {
-    background-color: rgba(13, 13, 13, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2000; //overcome bootstrap nav z-index
+  background-color: rgba(13, 13, 13, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000; //overcome bootstrap nav z-index
 
-    // display: none;
-    &.hide {
-        display: none;
+  // display: none;
+  &.hide {
+    display: none;
+  }
+
+  .quizPopup {
+    font-family: $headingFontTwo;
+    text-align: center;
+    width: 50%;
+    margin: 8% auto;
+    padding: 20px;
+    background-color: $yellowColor;
+    position: relative;
+
+    &.correct {
+      background-color: green;
     }
 
-    .quizPopup {
-        font-family: $headingFontTwo;
-        text-align: center;
-        width: 50%;
-        margin: 8% auto;
-        padding: 20px;
-        background-color: $yellowColor;
-        position: relative;
+    &.wrong {
+      background-color: crimson;
+    }
 
-        &.correct {
-            background-color: green;
+    @include tablet {
+      width: 70%;
+      margin: 35% auto;
+    }
+
+    @include mobile {
+      width: 90%;
+      margin: 40% auto;
+    }
+
+    .quizPopupClose {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      cursor: pointer;
+      color: $darkColor;
+    }
+
+    .quizPopupContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      overflow: hidden;
+
+      h2 {
+        font-size: 2em;
+        height: 2em;
+      }
+
+      #currentScore {
+        font-size: 1.5em;
+        font-family: $headingFontOne;
+        height: 1.5em;
+        overflow: hidden;
+        margin-bottom: 1em;
+      }
+
+      .gameOver {
+        font-size: 1.5em;
+        font-family: $headingFontOne;
+        height: 1.5em;
+        overflow: hidden;
+        margin-bottom: 1em;
+
+        &.hide {
+          display: none;
+        }
+      }
+
+      #questionContainer {
+        width: 95%;
+        background-color: $brightColor;
+        border-radius: 5px;
+        padding: 1em;
+        box-shadow: 0 0 10px 2px;
+        margin-bottom: 0.3em;
+
+        &.hide {
+          display: none;
         }
 
-        &.wrong {
-            background-color: crimson;
+        #question {
+          font-size: 1.5em;
+          font-family: $textFont;
+          padding: 0.5em;
+
+          @include tablet {
+            font-size: 1.5em;
+          }
+
+          @include mobile {
+            font-size: 1em;
+          }
         }
 
-        @include tablet {
-            width: 70%;
-            margin: 35% auto;
-        }
+        .button-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1em;
 
-        @include mobile {
-            width: 90%;
-            margin: 40% auto;
-        }
+          @include tablet {
+            gap: 1em;
+          }
 
-        .quizPopupClose {
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            cursor: pointer;
+          @include mobile {
+            gap: 0.5em;
+          }
+
+          .btn {
+            border: 1px solid $darkColor;
+            background-color: $yellowColor;
             color: $darkColor;
+            font-family: $textFont;
+            font-size: 1em;
+            padding: 0.5em;
+            outline: none;
+
+            @include tablet {
+              font-size: 1.2em;
+            }
+
+            @include mobile {
+              font-size: 0.8em;
+            }
+
+            &.correct {
+              background-color: green;
+              color: $brightColor;
+            }
+
+            &.wrong {
+              background-color: crimson;
+              color: $brightColor;
+            }
+
+            &:hover {
+              opacity: 0.8;
+            }
+          }
         }
+      }
 
-        .quizPopupContent {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            overflow: hidden;
+      .controls {
+        .btn {
+          border: 1px solid $darkColor;
+          background-color: $purpleColor;
+          color: $brightColor;
+          width: 100px;
+          font-family: $textFont;
+          text-transform: uppercase;
+          margin: 1em;
+          outline: none;
 
-            h2 {
-                font-size: 2em;
-                height: 2em;
-            }
+          &.hide {
+            display: none;
+          }
 
-            #currentScore {
-                font-size: 1.5em;
-                font-family: $headingFontOne;
-                height: 1.5em;
-                overflow: hidden;
-                margin-bottom: 1em;
-            }
-
-            .gameOver {
-                font-size: 1.5em;
-                font-family: $headingFontOne;
-                height: 1.5em;
-                overflow: hidden;
-                margin-bottom: 1em;
-
-                &.hide {
-                    display: none;
-                }
-            }
-
-            #questionContainer {
-                width: 95%;
-                background-color: $brightColor;
-                border-radius: 5px;
-                padding: 1em;
-                box-shadow: 0 0 10px 2px;
-                margin-bottom: 0.3em;
-
-                &.hide {
-                    display: none;
-                }
-
-                #question {
-                    font-size: 1.5em;
-                    font-family: $textFont;
-                    padding: 0.5em;
-
-                    @include tablet {
-                        font-size: 1.5em;
-                    }
-
-                    @include mobile {
-                        font-size: 1em;
-                    }
-                }
-
-                .button-grid {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 1em;
-
-                    @include tablet {
-                        gap: 1em;
-                    }
-
-                    @include mobile {
-                        gap: .5em;
-                    }
-
-                    .btn {
-                        border: 1px solid $darkColor;
-                        background-color: $yellowColor;
-                        color: $darkColor;
-                        font-family: $textFont;
-                        font-size: 1em;
-                        padding: 0.5em;
-                        outline: none;
-
-                        @include tablet {
-                            font-size: 1.2em;
-                        }
-
-                        @include mobile {
-                            font-size: .8em;
-                        }
-
-                        &.correct {
-                            background-color: green;
-                            color: $brightColor;
-                        }
-
-                        &.wrong {
-                            background-color: crimson;
-                            color: $brightColor;
-                        }
-
-                        &:hover {
-                            opacity: 0.8;
-                        }
-
-                    }
-                }
-            }
-
-            .controls {
-                .btn {
-                    border: 1px solid $darkColor;
-                    background-color: $purpleColor;
-                    color: $brightColor;
-                    width: 100px;
-                    font-family: $textFont;
-                    text-transform: uppercase;
-                    margin: 1em;
-                    outline: none;
-
-                    &.hide {
-                        display: none;
-                    }
-
-                    &:hover {
-                        opacity: 0.8;
-                    }
-                }
-            }
+          &:hover {
+            opacity: 0.8;
+          }
         }
+      }
     }
+  }
 }

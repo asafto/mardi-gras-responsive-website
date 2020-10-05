@@ -1,100 +1,100 @@
 #notifications {
-    background-color: $yellowColor;
-    height: 50vh;
-    overflow: hidden;
-    position: relative;
-    z-index: 4;
+  background-color: $yellowColor;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+
+  @include tablet {
+    height: 30vh;
+  }
+
+  @include mobile {
+    height: 40vh;
+  }
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em;
+    font-family: $headingFontTwo;
+    color: $purpleColor;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
 
     @include tablet {
-        height: 30vh;
+      font-size: 1.5em;
     }
 
     @include mobile {
-        height: 40vh;
+      font-size: 1.5em;
+    }
+  }
+
+  .notifications {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+      width: 80%;
     }
 
-    h1 {
-        text-align: center;
-        text-transform: uppercase;
-        padding: 1em;
-        font-family: $headingFontTwo;
-        color: $purpleColor;
-        font-size: 2.5em;
-        letter-spacing: 0.1em;
+    @include mobile {
+      width: 90%;
+    }
+
+    img {
+      display: block;
+      width: 25%;
+      margin: 15px;
+
+      @include tablet {
+        width: 40%;
+        min-width: 100px;
+        margin: 10px;
+      }
+
+      @include mobile {
+        width: 60%;
+        min-width: 100px;
+        margin: 1em 1em 1.8em 1em;
+      }
+    }
+
+    p {
+      color: $darkColor;
+      font-size: 1.3em;
+      padding: 15px;
+      line-height: 1.5;
+
+      @include tablet {
+        font-size: 1.1em;
+        line-height: 1.2;
+      }
+
+      @include mobile {
+        font-size: 1em;
+        line-height: 1.2;
+      }
+
+      a {
+        color: $greenColor;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: 0.1em 0.1em 0.3em $brightColor;
 
         @include tablet {
-            font-size: 1.5em;
+          font-size: 1em;
         }
 
         @include mobile {
-            font-size: 1.5em;
+          font-size: 1em;
         }
+      }
     }
-
-    .notifications {
-        width: 70%;
-        margin: 0 auto;
-        padding-bottom: 15px;
-        display: flex;
-        align-items: center;
-
-        @include tablet {
-            width: 80%
-        }
-
-        @include mobile {
-            width: 90%
-        }
-
-        img {
-            display: block;
-            width: 25%;
-            margin: 15px;
-
-            @include tablet {
-                width: 40%;
-                min-width: 100px;
-                margin: 10px;
-            }
-
-            @include mobile {
-                width: 60%;
-                min-width: 100px;
-                margin: 1em 1em 1.8em 1em;
-            }
-        }
-
-        p {
-            color: $darkColor;
-            font-size: 1.3em;
-            padding: 15px;
-            line-height: 1.5;
-
-            @include tablet {
-                font-size: 1.1em;
-                line-height: 1.2;
-            }
-
-            @include mobile {
-                font-size: 1em;
-                line-height: 1.2;
-            }
-
-            a {
-                color: $greenColor;
-                font-size: 1.2em;
-                font-weight: bold;
-                text-decoration: none;
-                text-shadow: .1em .1em .3em $brightColor;
-
-                @include tablet {
-                    font-size: 1em;
-                }
-
-                @include mobile {
-                    font-size: 1em;
-                }
-            }
-        }
-    }
+  }
 }

@@ -3,13 +3,13 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow-x: hidden;
   outline: none;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #0d0d0d;
 }
 
@@ -20,7 +20,7 @@ p {
 }
 
 .navbar {
-  background-color: rgba(242, 242, 242, 0.3);
+  background-color: rgba(242, 242, 242, 0.8);
 }
 
 .navbar .navbar-brand img {
@@ -58,22 +58,22 @@ p {
     padding-bottom: 15px;
     width: 100%;
     height: 33%;
-    background-color: rgba(242, 242, 242, 0.3);
+    background-color: rgba(242, 242, 242, 0.8);
   }
   .navbar #navbarResponsive.collapsing {
     left: -100%;
-    -webkit-transition: all .3s ease-in;
-    transition: all .3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
   }
   .navbar #navbarResponsive.show {
     left: 0;
-    -webkit-transition: left .3s ease-in;
-    transition: left .3s ease-in;
+    -webkit-transition: left 0.3s ease-in;
+    transition: left 0.3s ease-in;
   }
   .navbar #navbarResponsive.collapsed {
     left: -100%;
-    -webkit-transition: left .3s ease-in;
-    transition: left .3s ease-in;
+    -webkit-transition: left 0.3s ease-in;
+    transition: left 0.3s ease-in;
   }
 }
 
@@ -86,23 +86,23 @@ p {
     padding-right: 15px;
     padding-bottom: 15px;
     width: 100%;
-    height: 50%;
-    background-color: rgba(242, 242, 242, 0.3);
+    height: 40%;
+    background-color: rgba(242, 242, 242, 0.8);
   }
   .navbar #navbarResponsive.collapsing {
     left: -100%;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
   }
   .navbar #navbarResponsive.show {
     left: 0;
-    -webkit-transition: left .3s ease-in;
-    transition: left .3s ease-in;
+    -webkit-transition: left 0.3s ease-in;
+    transition: left 0.3s ease-in;
   }
   .navbar #navbarResponsive.collapsed {
     left: -100%;
-    -webkit-transition: left .3s ease-out;
-    transition: left .3s ease-out;
+    -webkit-transition: left 0.3s ease-out;
+    transition: left 0.3s ease-out;
   }
 }
 
@@ -126,7 +126,7 @@ p {
 
 .navbar #navbarResponsive .nav-item .nav-link {
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 1.4em;
   letter-spacing: 0.2em;
@@ -191,18 +191,18 @@ p {
 
 #carouselMainSlider .carousel-item img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: top center;
-     object-position: top center;
+  object-position: top center;
 }
 
 @media (max-width: 768px) {
   #carouselMainSlider .carousel-item img {
     height: 80vh;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     -o-object-position: center;
-       object-position: center;
+    object-position: center;
   }
 }
 
@@ -227,7 +227,7 @@ p {
 }
 
 #carouselMainSlider .carousel-item .carousel-caption h2 {
-  font-family: "Pattaya", sans-serif;
+  font-family: 'Pattaya', sans-serif;
   color: #8cbf3f;
   letter-spacing: 0.2em;
   font-size: 4em;
@@ -247,7 +247,7 @@ p {
 }
 
 #carouselMainSlider .carousel-item .carousel-caption h5 {
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   font-size: 3em;
   height: 3em;
   color: #9453a6;
@@ -279,12 +279,12 @@ p {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-image: url("../images/mardigras/mardigras3.jpg");
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url('../images/mardigras/mardigras3.jpg');
     height: 80vh;
     background-attachment: fixed;
     background-position: center;
@@ -303,14 +303,14 @@ p {
     overflow: hidden;
   }
   #mobileParallax .parallaxHeading h2 {
-    font-family: "Pattaya", sans-serif;
+    font-family: 'Pattaya', sans-serif;
     color: #8cbf3f;
     letter-spacing: 0.2em;
     font-size: 2.5em;
     overflow: hidden;
   }
   #mobileParallax .parallaxHeading h5 {
-    font-family: "Henny Penny", cursive;
+    font-family: 'Henny Penny', cursive;
     font-size: 2em;
     height: 3em;
     color: #9453a6;
@@ -326,12 +326,12 @@ p {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-image: url("../images/mardigras/mardigras3.jpg");
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url('../images/mardigras/mardigras3.jpg');
     height: 80vh;
     background-attachment: fixed;
     background-position: center;
@@ -350,14 +350,14 @@ p {
     overflow: hidden;
   }
   #mobileParallax .parallaxHeading h2 {
-    font-family: "Pattaya", sans-serif;
+    font-family: 'Pattaya', sans-serif;
     color: #8cbf3f;
     letter-spacing: 0.2em;
     font-size: 2em;
     overflow: hidden;
   }
   #mobileParallax .parallaxHeading h5 {
-    font-family: "Henny Penny", cursive;
+    font-family: 'Henny Penny', cursive;
     font-size: 1.5em;
     height: 3em;
     color: #9453a6;
@@ -390,7 +390,7 @@ p {
   text-align: center;
   text-transform: uppercase;
   padding: 1em;
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   color: #9453a6;
   font-size: 2.5em;
   letter-spacing: 0.1em;
@@ -416,8 +416,8 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -516,7 +516,7 @@ p {
 }
 
 #sponsers h1 {
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   text-transform: uppercase;
   text-align: center;
   padding: 1em;
@@ -559,15 +559,15 @@ p {
   width: 100%;
   display: block;
   padding: 0;
-  -webkit-transition: -webkit-transform .2s ease;
-  transition: -webkit-transform .2s ease;
-  transition: transform .2s ease;
-  transition: transform .2s ease, -webkit-transform .2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 #sponsers #carouselSponsers .row .card .card-img-top:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   overflow: hidden;
 }
 
@@ -577,18 +577,18 @@ p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   text-align: center;
   background-color: #f2f2f2;
 }
 
 #sponsers #carouselSponsers .row .card .card-body .card-title {
   overflow: hidden;
-  font-family: "Pattaya", sans-serif;
+  font-family: 'Pattaya', sans-serif;
   color: #9453a6;
   font-size: 1.2em;
 }
@@ -650,17 +650,17 @@ p {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     text-align: center;
     background-color: #f2f2f2;
   }
   #sponsers #carouselSponsersMobile .row .card .card-body .card-title {
     overflow: hidden;
-    font-family: "Pattaya", sans-serif;
+    font-family: 'Pattaya', sans-serif;
     color: #9453a6;
     font-size: 1.8em;
   }
@@ -670,7 +670,7 @@ p {
   #sponsers #carouselSponsersMobile .row .card .card-body .btn {
     border: 1px solid #8cbf3f;
     color: #8cbf3f;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
   }
   #sponsers #carouselSponsersMobile .row .card .card-body .btn:hover {
@@ -705,22 +705,22 @@ p {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     text-align: center;
     background-color: #f2f2f2;
   }
   #sponsers #carouselSponsersMobile .row .card .card-body .card-title {
     overflow: hidden;
-    font-family: "Pattaya", sans-serif;
+    font-family: 'Pattaya', sans-serif;
     color: #9453a6;
     font-size: 1.2em;
   }
   #sponsers #carouselSponsersMobile .row .card .card-body .card-text {
-    font-size: .9em;
+    font-size: 0.9em;
   }
   #sponsers #carouselSponsersMobile .row .card .card-body .btn {
     border: 1px solid #8cbf3f;
@@ -746,15 +746,15 @@ p {
   background-color: rgba(242, 242, 242, 0.7);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: url("../images/banners/pc/banner1_pc.png");
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-image: url('../images/banners/pc/banner1_pc.png');
   background-size: cover;
   background-position: center;
   z-index: 8;
@@ -769,7 +769,7 @@ p {
 
 #bannerOne.sticky2 {
   position: absolute;
-  top: 1075px;
+  top: 1013px;
 }
 
 @media (max-width: 768px) {
@@ -796,15 +796,15 @@ p {
   background-color: rgba(242, 242, 242, 0.7);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: url("../images/banners/pc/banner3_pc.png");
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-image: url('../images/banners/pc/banner3_pc.png');
   background-size: cover;
   background-position: center;
   z-index: 8;
@@ -819,7 +819,7 @@ p {
 
 #bannerTwo.sticky2 {
   position: absolute;
-  top: 1075px;
+  top: 1013px;
 }
 
 @media (max-width: 768px) {
@@ -847,7 +847,7 @@ p {
     cursor: pointer;
     width: 100%;
     height: 100px;
-    background-image: url("../images/banners/mobile/banner4_mobile.png");
+    background-image: url('../images/banners/mobile/banner4_mobile.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -865,7 +865,7 @@ p {
     cursor: pointer;
     width: 100%;
     height: 50px;
-    background-image: url("../images/banners/mobile/banner4_mobile.png");
+    background-image: url('../images/banners/mobile/banner4_mobile.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -896,7 +896,7 @@ p {
 }
 
 #attractions .jumbotron .heading {
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   text-transform: uppercase;
   padding: 15px;
   font-size: 2.5em;
@@ -939,10 +939,10 @@ p {
   display: block;
   width: 100%;
   height: 20em;
-  -webkit-transition: -webkit-transform .2s ease;
-  transition: -webkit-transform .2s ease;
-  transition: transform .2s ease;
-  transition: transform .2s ease, -webkit-transform .2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 @media (max-width: 768px) {
@@ -959,7 +959,7 @@ p {
 
 #attractions .jumbotron .row.no-padding .attraction img:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   overflow: hidden;
 }
 
@@ -969,7 +969,7 @@ p {
 
 #attractions .jumbotron .row.no-padding .attraction h5 {
   position: absolute;
-  font-family: "Pattaya", sans-serif;
+  font-family: 'Pattaya', sans-serif;
   text-transform: uppercase;
   color: #9453a6;
   font-size: 1.5em;
@@ -978,7 +978,7 @@ p {
   top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   overflow: hidden;
   display: none;
 }
@@ -1007,7 +1007,7 @@ p {
 }
 
 #attractions .jumbotron .callToAction p {
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   width: 75%;
   margin: 0 auto;
   padding: 1rem;
@@ -1030,8 +1030,8 @@ p {
 #attractions .jumbotron .callToAction .btnCallToAction {
   border: none;
   border-radius: 0;
-  padding: .6rem 1.1rem;
-  font-family: "Roboto", sans-serif;
+  padding: 0.6rem 1.1rem;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   color: #f2f2f2;
   background-color: #0d0d0d;
@@ -1048,7 +1048,7 @@ p {
 
 @media (max-width: 576px) {
   #attractions .jumbotron .callToAction .btnCallToAction {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 }
 
@@ -1069,7 +1069,7 @@ p {
 }
 
 #footer h5 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 1em;
@@ -1083,25 +1083,25 @@ p {
 
 @media (max-width: 576px) {
   #footer h5 {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 }
 
 #footer h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
 @media (max-width: 768px) {
   #footer h6 {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 }
 
 @media (max-width: 576px) {
   #footer h6 {
-    font-size: .7em;
+    font-size: 0.7em;
   }
 }
 
@@ -1211,25 +1211,25 @@ p {
 }
 
 #signUpPage .form-container .form-head {
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   color: #f2cc0f;
   overflow: hidden;
 }
 
 #signUpPage .form-container p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #f2cc0f;
   font-size: 1.2em;
 }
 
 #signUpPage .form-container label {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #f2f2f2;
   font-size: 1em;
 }
 
 #signUpPage .form-container button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #f2f2f2;
   font-size: 1em;
   background-color: #9453a6;
@@ -1251,12 +1251,12 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: url("../images/mardigras/mardigras7.jpg");
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-image: url('../images/mardigras/mardigras7.jpg');
   height: 80vh;
   background-attachment: fixed;
   background-position: center;
@@ -1277,7 +1277,7 @@ p {
 }
 
 #aboutParallax .parallaxHeading h2 {
-  font-family: "Pattaya", sans-serif;
+  font-family: 'Pattaya', sans-serif;
   color: #8cbf3f;
   letter-spacing: 0.2em;
   font-size: 4em;
@@ -1297,7 +1297,7 @@ p {
 }
 
 #aboutParallax .parallaxHeading h5 {
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   font-size: 3em;
   height: 3em;
   color: #9453a6;
@@ -1325,7 +1325,7 @@ p {
 
 #aboutSection .title h2 {
   font-size: 2.5em;
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   color: #f2f2f2;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1369,13 +1369,13 @@ p {
 
 #aboutSection .row .card:hover > .card-front {
   -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
   overflow: hidden;
 }
 
 #aboutSection .row .card:hover > .card-back {
   -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
+  transform: rotateY(0deg);
   overflow: hidden;
 }
 
@@ -1385,7 +1385,7 @@ p {
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   overflow: hidden;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
@@ -1395,15 +1395,15 @@ p {
 
 #aboutSection .row .card .card-front {
   -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 #aboutSection .row .card .card-front .card-img-top {
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center top;
-     object-position: center top;
+  object-position: center top;
 }
 
 #aboutSection .row .card .card-front .card-body {
@@ -1412,7 +1412,7 @@ p {
   left: 50%;
   width: 80%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   background-color: rgba(13, 13, 13, 0.5);
   width: 90%;
@@ -1431,11 +1431,11 @@ p {
 }
 
 #aboutSection .row .card .card-front .card-body .card-title {
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   font-size: 1.5em;
   text-transform: uppercase;
   color: #f2f2f2;
-  padding: .5em;
+  padding: 0.5em;
   line-height: 1.5em;
   letter-spacing: 0.1em;
   color: #f2cc0f;
@@ -1449,13 +1449,13 @@ p {
 
 @media (max-width: 576px) {
   #aboutSection .row .card .card-front .card-body .card-title {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 }
 
 #aboutSection .row .card .card-back {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
   padding: 20px;
   background: #f2f2f2;
 }
@@ -1468,7 +1468,7 @@ p {
 
 @media (max-width: 576px) {
   #aboutSection .row .card .card-back p {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
 
@@ -1533,12 +1533,12 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: url("../images/mardigras/mardigras4.jpg");
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-image: url('../images/mardigras/mardigras4.jpg');
   height: 80vh;
   background-attachment: fixed;
   background-position: center bottom;
@@ -1559,7 +1559,7 @@ p {
 }
 
 #mediaParallax .parallaxHeading h2 {
-  font-family: "Pattaya", sans-serif;
+  font-family: 'Pattaya', sans-serif;
   color: #8cbf3f;
   letter-spacing: 0.2em;
   font-size: 4em;
@@ -1579,7 +1579,7 @@ p {
 }
 
 #mediaParallax .parallaxHeading h5 {
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   font-size: 3em;
   height: 3em;
   color: #9453a6;
@@ -1607,7 +1607,7 @@ p {
 
 #mediaSection .title h2 {
   font-size: 2.5em;
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   color: #f2f2f2;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1629,7 +1629,7 @@ p {
 
 #mediaSection .subTitle {
   font-size: 2em;
-  font-family: "Pattaya", sans-serif;
+  font-family: 'Pattaya', sans-serif;
   color: #9453a6;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1653,8 +1653,8 @@ p {
   width: 80%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 200px;
   grid-gap: 10px;
   grid-auto-flow: dense;
@@ -1664,15 +1664,15 @@ p {
 
 @media (max-width: 768px) {
   #mediaSection .gallery {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 576px) {
   #mediaSection .gallery {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1682,35 +1682,35 @@ p {
 
 #mediaSection .gallery a.landscape {
   -ms-grid-column-span: 2;
-      grid-column-end: span 2;
+  grid-column-end: span 2;
 }
 
 #mediaSection .gallery a img {
   display: block;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   width: 100%;
   height: 100%;
 }
 
 #mediaSection .gallery.video {
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 
 @media (max-width: 768px) {
   #mediaSection .gallery.video {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 576px) {
   #mediaSection .gallery.video {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -1728,7 +1728,7 @@ p {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #faqParallax {
@@ -1737,12 +1737,12 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: url("../images/mardigras/mardigras5.jpg");
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-image: url('../images/mardigras/mardigras5.jpg');
   height: 80vh;
   background-attachment: fixed;
   background-position: center bottom;
@@ -1763,7 +1763,7 @@ p {
 }
 
 #faqParallax .parallaxHeading h2 {
-  font-family: "Pattaya", sans-serif;
+  font-family: 'Pattaya', sans-serif;
   color: #8cbf3f;
   letter-spacing: 0.2em;
   font-size: 4em;
@@ -1783,7 +1783,7 @@ p {
 }
 
 #faqParallax .parallaxHeading h5 {
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   font-size: 3em;
   height: 3em;
   color: #9453a6;
@@ -1830,7 +1830,7 @@ p {
 
 #faqSection .container .title h2 {
   font-size: 2.5em;
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   color: #f2f2f2;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1852,7 +1852,7 @@ p {
 
 #faqSection .container .subTitle {
   font-size: 2em;
-  font-family: "Pattaya", sans-serif;
+  font-family: 'Pattaya', sans-serif;
   color: #f2cc0f;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1877,14 +1877,14 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #f2f2f2;
 }
 
 #faqSection .container .faqExplained p {
   font-size: 1em;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #0d0d0d;
   padding: 1em 2em 0.5em 1em;
   text-align: justify;
@@ -1898,7 +1898,7 @@ p {
 
 @media (max-width: 576px) {
   #faqSection .container .faqExplained p {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
 
@@ -1957,11 +1957,11 @@ p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: rgba(13, 13, 13, 0.5);
   border: 1px solid #f2f2f2;
   margin: 25vh auto 5vh auto;
@@ -1980,25 +1980,25 @@ p {
 }
 
 .contact-page #contactUsPage .row .form-container .form-head {
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   color: #f2cc0f;
   overflow: hidden;
 }
 
 .contact-page #contactUsPage .row .form-container p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #f2cc0f;
   font-size: 1.2em;
 }
 
 .contact-page #contactUsPage .row .form-container label {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #f2f2f2;
   font-size: 1em;
 }
 
 .contact-page #contactUsPage .row .form-container button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #f2f2f2;
   font-size: 1em;
   background-color: #9453a6;
@@ -2050,7 +2050,7 @@ p {
   height: 4em;
   background-color: rgba(13, 13, 13, 0.5);
   border-radius: 50em;
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   color: #f2cc0f;
 }
 
@@ -2079,7 +2079,7 @@ p {
 }
 
 .quizWrapper .quizPopup {
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   text-align: center;
   width: 50%;
   margin: 8% auto;
@@ -2124,13 +2124,13 @@ p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -2141,7 +2141,7 @@ p {
 
 .quizWrapper .quizPopup .quizPopupContent #currentScore {
   font-size: 1.5em;
-  font-family: "Pattaya", sans-serif;
+  font-family: 'Pattaya', sans-serif;
   height: 1.5em;
   overflow: hidden;
   margin-bottom: 1em;
@@ -2149,7 +2149,7 @@ p {
 
 .quizWrapper .quizPopup .quizPopupContent .gameOver {
   font-size: 1.5em;
-  font-family: "Pattaya", sans-serif;
+  font-family: 'Pattaya', sans-serif;
   height: 1.5em;
   overflow: hidden;
   margin-bottom: 1em;
@@ -2165,7 +2165,7 @@ p {
   border-radius: 5px;
   padding: 1em;
   -webkit-box-shadow: 0 0 10px 2px;
-          box-shadow: 0 0 10px 2px;
+  box-shadow: 0 0 10px 2px;
   margin-bottom: 0.3em;
 }
 
@@ -2175,7 +2175,7 @@ p {
 
 .quizWrapper .quizPopup .quizPopupContent #questionContainer #question {
   font-size: 1.5em;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 0.5em;
 }
 
@@ -2194,8 +2194,8 @@ p {
 .quizWrapper .quizPopup .quizPopupContent #questionContainer .button-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1em;
 }
 
@@ -2207,7 +2207,7 @@ p {
 
 @media (max-width: 576px) {
   .quizWrapper .quizPopup .quizPopupContent #questionContainer .button-grid {
-    gap: .5em;
+    gap: 0.5em;
   }
 }
 
@@ -2215,35 +2215,60 @@ p {
   border: 1px solid #0d0d0d;
   background-color: #f2cc0f;
   color: #0d0d0d;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
   padding: 0.5em;
   outline: none;
 }
 
 @media (max-width: 768px) {
-  .quizWrapper .quizPopup .quizPopupContent #questionContainer .button-grid .btn {
+  .quizWrapper
+    .quizPopup
+    .quizPopupContent
+    #questionContainer
+    .button-grid
+    .btn {
     font-size: 1.2em;
   }
 }
 
 @media (max-width: 576px) {
-  .quizWrapper .quizPopup .quizPopupContent #questionContainer .button-grid .btn {
-    font-size: .8em;
+  .quizWrapper
+    .quizPopup
+    .quizPopupContent
+    #questionContainer
+    .button-grid
+    .btn {
+    font-size: 0.8em;
   }
 }
 
-.quizWrapper .quizPopup .quizPopupContent #questionContainer .button-grid .btn.correct {
+.quizWrapper
+  .quizPopup
+  .quizPopupContent
+  #questionContainer
+  .button-grid
+  .btn.correct {
   background-color: green;
   color: #f2f2f2;
 }
 
-.quizWrapper .quizPopup .quizPopupContent #questionContainer .button-grid .btn.wrong {
+.quizWrapper
+  .quizPopup
+  .quizPopupContent
+  #questionContainer
+  .button-grid
+  .btn.wrong {
   background-color: crimson;
   color: #f2f2f2;
 }
 
-.quizWrapper .quizPopup .quizPopupContent #questionContainer .button-grid .btn:hover {
+.quizWrapper
+  .quizPopup
+  .quizPopupContent
+  #questionContainer
+  .button-grid
+  .btn:hover {
   opacity: 0.8;
 }
 
@@ -2252,7 +2277,7 @@ p {
   background-color: #9453a6;
   color: #f2f2f2;
   width: 100px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   margin: 1em;
   outline: none;
@@ -2281,7 +2306,7 @@ p {
 }
 
 .adWrapper .adPopup {
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   text-align: center;
   width: 40%;
   height: 70vh;
@@ -2321,13 +2346,13 @@ p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -2373,16 +2398,16 @@ p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
+  transform: rotate(30deg);
   z-index: 10;
   padding: 0 1em;
 }
@@ -2394,7 +2419,7 @@ p {
     top: 10vh;
     right: 23%;
     -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
 }
 
@@ -2405,14 +2430,14 @@ p {
     top: 12vh;
     right: 8%;
     -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
 }
 
 .counterContainer .counterTitle {
-  font-family: "Pattaya", sans-serif;
+  font-family: 'Pattaya', sans-serif;
   color: #9453a6;
-  padding: .5em 1em 0 1em;
+  padding: 0.5em 1em 0 1em;
   font-size: 2em;
   text-transform: uppercase;
   text-shadow: -2px 0 #f2f2f2, 0 2px #f2f2f2, 2px 0 #f2f2f2, 0 -2px #f2f2f2;
@@ -2422,14 +2447,14 @@ p {
 @media (max-width: 768px) {
   .counterContainer .counterTitle {
     font-size: 1.5em;
-    padding: .5em 1em 0 1em;
+    padding: 0.5em 1em 0 1em;
   }
 }
 
 @media (max-width: 576px) {
   .counterContainer .counterTitle {
     font-size: 1.2em;
-    padding: .5em 1em 0 .5em;
+    padding: 0.5em 1em 0 0.5em;
   }
 }
 
@@ -2438,10 +2463,10 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 80%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-shadow: -2px 0 #f2f2f2, 0 2px #f2f2f2, 2px 0 #f2f2f2, 0 -2px #f2f2f2;
   margin-bottom: 0;
 }
@@ -2488,19 +2513,19 @@ p {
   font-size: 1em;
   list-style-type: none;
   color: #0d0d0d;
-  padding: .1em;
+  padding: 0.1em;
   text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
   .counterContainer .counter li {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
 
 @media (max-width: 576px) {
   .counterContainer .counter li {
-    min-width: .8em;
+    min-width: 0.8em;
   }
 }
 

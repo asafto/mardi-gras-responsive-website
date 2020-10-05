@@ -1,170 +1,170 @@
 #carouselMainSlider {
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  .carousel-item {
+    height: 80vh;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      object-position: top center;
+    }
+
     @include tablet {
-        display: none;
+      img {
+        height: 80vh;
+        object-fit: cover;
+        object-position: center;
+      }
     }
 
     @include mobile {
-        display: none;
+      height: 80vh;
+
+      img {
+        height: 90vh;
+      }
     }
 
-    .carousel-item {
-        height: 80vh;
+    .carousel-caption {
+      position: absolute;
+      top: 30%;
+      width: 80%;
+      left: 10%;
+      right: 10%;
+      text-transform: uppercase;
+      text-shadow: -2px 0 $brightColor, 0 2px $brightColor, 2px 0 $brightColor,
+        0 -2px $brightColor;
+      overflow: hidden;
+
+      h2 {
+        font-family: $headingFontOne;
+        color: $greenColor;
+        letter-spacing: 0.2em;
+        font-size: 4em;
         overflow: hidden;
-        img {
-            object-fit: cover;
-            object-position: top center;
-        }
 
         @include tablet {
-            img {
-                height: 80vh;
-                object-fit: cover;
-                object-position: center;
-            }
+          font-size: 2.5em;
         }
 
         @include mobile {
-            height: 80vh;
+          font-size: 2em;
+        }
+      }
 
-            img {
-                height: 90vh;
-            }
+      h5 {
+        font-family: $headingFontTwo;
+        font-size: 3em;
+        height: 3em;
+        color: $purpleColor;
+        letter-spacing: 0.1em;
+        margin-top: 0.5em;
+
+        @include tablet {
+          font-size: 2em;
         }
 
-        .carousel-caption {
-            position: absolute;
-            top: 30%;
-            width: 80%;
-            left: 10%;
-            right: 10%;
-            text-transform: uppercase;
-            text-shadow: -2px 0 $brightColor, 0 2px $brightColor, 2px 0 $brightColor,
-                0 -2px $brightColor;
-            overflow: hidden;
-
-            h2 {
-                font-family: $headingFontOne;
-                color: $greenColor;
-                letter-spacing: 0.2em;
-                font-size: 4em;
-                overflow: hidden;
-
-                @include tablet {
-                    font-size: 2.5em;
-                }
-
-                @include mobile {
-                    font-size: 2em;
-                }
-            }
-
-            h5 {
-                font-family: $headingFontTwo;
-                font-size: 3em;
-                height: 3em;
-                color: $purpleColor;
-                letter-spacing: 0.1em;
-                margin-top: 0.5em;
-
-                @include tablet {
-                    font-size: 2em;
-                }
-
-                @include mobile {
-                    font-size: 1.5em;
-                }
-            }
+        @include mobile {
+          font-size: 1.5em;
         }
+      }
     }
+  }
 }
 
 #mobileParallax {
-    display: none;
-    height: 0;
+  display: none;
+  height: 0;
 
-    @include tablet {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url('../images/mardigras/mardigras3.jpg');
-        height: 80vh;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -1;
+  @include tablet {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/mardigras/mardigras3.jpg');
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
 
-        .parallaxHeading {
-            position: fixed;
-            top: 30%;
-            width: 80%;
-            left: 10%;
-            right: 10%;
-            text-transform: uppercase;
-            text-shadow: -2px 0 $brightColor, 0 2px $brightColor, 2px 0 $brightColor,
-                0 -2px $brightColor;
-            overflow: hidden;
+    .parallaxHeading {
+      position: fixed;
+      top: 30%;
+      width: 80%;
+      left: 10%;
+      right: 10%;
+      text-transform: uppercase;
+      text-shadow: -2px 0 $brightColor, 0 2px $brightColor, 2px 0 $brightColor,
+        0 -2px $brightColor;
+      overflow: hidden;
 
-            h2 {
-                font-family: $headingFontOne;
-                color: $greenColor;
-                letter-spacing: 0.2em;
-                font-size: 2.5em;
-                overflow: hidden;
-            }
+      h2 {
+        font-family: $headingFontOne;
+        color: $greenColor;
+        letter-spacing: 0.2em;
+        font-size: 2.5em;
+        overflow: hidden;
+      }
 
-            h5 {
-                font-family: $headingFontTwo;
-                font-size: 2em;
-                height: 3em;
-                color: $purpleColor;
-                letter-spacing: 0.1em;
-                margin-top: 0.5em;
-            }
-        }
+      h5 {
+        font-family: $headingFontTwo;
+        font-size: 2em;
+        height: 3em;
+        color: $purpleColor;
+        letter-spacing: 0.1em;
+        margin-top: 0.5em;
+      }
     }
+  }
 
-    @include mobile {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url('../images/mardigras/mardigras3.jpg');
-        height: 80vh;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -1;
+  @include mobile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/mardigras/mardigras3.jpg');
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
 
-        .parallaxHeading {
-            position: fixed;
-            top: 30%;
-            width: 80%;
-            left: 10%;
-            right: 10%;
-            text-transform: uppercase;
-            text-shadow: -2px 0 $brightColor, 0 2px $brightColor, 2px 0 $brightColor,
-                0 -2px $brightColor;
-            overflow: hidden;
+    .parallaxHeading {
+      position: fixed;
+      top: 30%;
+      width: 80%;
+      left: 10%;
+      right: 10%;
+      text-transform: uppercase;
+      text-shadow: -2px 0 $brightColor, 0 2px $brightColor, 2px 0 $brightColor,
+        0 -2px $brightColor;
+      overflow: hidden;
 
-            h2 {
-                font-family: $headingFontOne;
-                color: $greenColor;
-                letter-spacing: 0.2em;
-                font-size: 2em;
-                overflow: hidden;
-            }
+      h2 {
+        font-family: $headingFontOne;
+        color: $greenColor;
+        letter-spacing: 0.2em;
+        font-size: 2em;
+        overflow: hidden;
+      }
 
-            h5 {
-                font-family: $headingFontTwo;
-                font-size: 1.5em;
-                height: 3em;
-                color: $purpleColor;
-                letter-spacing: 0.1em;
-                margin-top: 0.5em;
-            }
-        }
+      h5 {
+        font-family: $headingFontTwo;
+        font-size: 1.5em;
+        height: 3em;
+        color: $purpleColor;
+        letter-spacing: 0.1em;
+        margin-top: 0.5em;
+      }
     }
+  }
 }
