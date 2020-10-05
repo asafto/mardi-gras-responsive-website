@@ -2431,7 +2431,7 @@ p {
   .counterContainer {
     position: fixed;
     z-index: 3;
-    top: 12vh;
+    top: 10vh;
     right: 8%;
     -webkit-transform: none;
     transform: none;
