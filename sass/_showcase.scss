@@ -24,10 +24,12 @@
     }
 
     @include mobile {
-      height: 80vh;
+      height: 90vh;
 
       img {
         height: 90vh;
+        object-fit: cover;
+        object-position: center;
       }
     }
 
