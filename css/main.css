@@ -289,7 +289,7 @@ p {
     -ms-flex-pack: center;
     justify-content: center;
     background-image: url('../images/mardigras/mardigras3.jpg');
-    height: 800px;
+    height: 80vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -336,7 +336,7 @@ p {
     -ms-flex-pack: center;
     justify-content: center;
     background-image: url('../images/mardigras/mardigras3.jpg');
-    height: 600px;
+    height: 80vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1507,7 +1507,7 @@ p {
 
 @media (max-width: 576px) {
   #aboutSection .row .card.history {
-    height: 215vh;
+    height: 208vh;
   }
 }
 
@@ -1700,7 +1700,7 @@ p {
 }
 
 #mediaSection .gallery.video {
-  -ms-grid-columns: repeat(6, 1fr);
+  -ms-grid-columns: eat(6, 1fr);
   grid-template-columns: repeat(6, 1fr);
 }
 
