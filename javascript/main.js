@@ -13,6 +13,7 @@ window.onload = () => {
 
 window.onscroll = () => {
   //setting sticky class for side banners
+  // console.log(window.pageYOffset);
   stickyManager();
 };
 
@@ -60,12 +61,12 @@ const stickyManager = () => {
   let bannerOne = document.querySelector('#bannerOne');
   let bannerTwo = document.querySelector('#bannerTwo');
 
-  if (window.pageYOffset < 465) {
+  if (window.pageYOffset < 505) {
     bannerOne.classList.remove('sticky');
     bannerTwo.classList.remove('sticky');
     bannerOne.classList.remove('sticky2');
     bannerTwo.classList.remove('sticky2');
-  } else if (window.pageYOffset > 465 && window.pageYOffset < 927) {
+  } else if (window.pageYOffset > 505 && window.pageYOffset < 927) {
     bannerOne.classList.add('sticky');
     bannerTwo.classList.add('sticky');
     bannerOne.classList.remove('sticky2');
